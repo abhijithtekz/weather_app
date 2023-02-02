@@ -2,7 +2,7 @@
 let ob=document.getElementById("weatherform");
 function fetchdetails(city)
 {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=0cac13365233bd824eef684f9aee323d`).
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=0cac13365233bd824eef684f9aee323d`).
     then(res=>res.json())
     .then((res)=>{
         let cityname=document.getElementById('cityName');
